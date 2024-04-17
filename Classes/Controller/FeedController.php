@@ -126,6 +126,7 @@ class FeedController extends ActionController
         $feed->set_raw_data(GeneralUtility::getUrl($feedUrl));
         $location = Environment::getPublicPath() . '/typo3temp';
         $feed->set_cache_location($location);
+        // @extensionScannerIgnoreLine
         $feed->init();
         return $feed;
     }
