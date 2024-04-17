@@ -10,3 +10,8 @@ services:
 
   Fab\RssDisplay\Controller\FeedController:
     public: true
+
+  Fab\RssDisplay\Frontend\WizardEventListener:
+    tags:
+      - name: event.listener
+        identifier: 'rss-display/backend/modify-wizard-items'
