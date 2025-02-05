@@ -7,8 +7,6 @@ if (!defined('TYPO3')) die ('Access denied.');
 use Fab\RssDisplay\Controller\FeedController;
 $typo3Version = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Information\Typo3Version::class);
 
-
-
 // Define whether USER or USER_INT.
 $pluginType = 'USER_INT';
 $configuration = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Configuration\ExtensionConfiguration::class)->get('rss_display');
